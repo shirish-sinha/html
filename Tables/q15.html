@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Question 15 - Advanced Combined Table</title>
+</head>
+<body>
+<h1>Question 15: Advanced Table Combining Multiple Features</h1>
+
+<table border="1">
+  <caption>Institute Annual Report</caption>
+  <thead>
+    <tr>
+      <th scope="col" id="colYear">Year</th>
+      <th scope="col" id="colTerm" colspan="2">Term</th>
+      <th scope="col" id="colStudents">Students Enrolled</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row" id="rowYear1" headers="colYear" rowspan="2">2025</th>
+      <td headers="rowYear1 colTerm">Term 1</td>
+      <td headers="rowYear1 colTerm">Fall</td>
+      <td headers="rowYear1 colStudents">150</td>
+    </tr>
+    <tr>
+      <td headers="rowYear1 colTerm">Term 2</td>
+      <td headers="rowYear1 colTerm">Spring</td>
+      <td headers="rowYear1 colStudents">170</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="3">Total Enrollment</td>
+      <td>320</td>
+    </tr>
+  </tfoot>
+</table>
+
+</body>
+</html>
